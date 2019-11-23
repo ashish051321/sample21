@@ -1,7 +1,7 @@
 export enum ScreenConstants{
   loginWelcomeTitle= 'Welcome to Opportunities Platform',
   loginWelcomeDescription='Your Gateway to the ocean of opportunities at XDBS!!',
-  socialLoginGoogle = 'Google Login'
+  socialLoginGoogle = 'Start with Google Login'
 }
 export const loginCardImages = [
   {
