@@ -1,6 +1,5 @@
 <ion-content fullscreen
-	style="background-image:url('https://cdn.jsdelivr.net/gh/ashish051321/sample21@master/grey_pattern.png'); height:100vh;"
-	class="d-flex justify-content-center align-items-end">
+	style="background-image:url('https://cdn.jsdelivr.net/gh/ashish051321/sample21@master/grey_pattern.png'); height:100vh;">
 	<!-- <div style="position:fixed; background-color:rgba(0,0,0,0.6); width:100%;text-align:center;  letter-spacing:3px;color:white; z-index:999"
 		class="h2 p-3">{{screenConst.loginWelcomeTitle}} </div> -->
 
@@ -14,17 +13,17 @@
 </ion-card>
 
 	<ion-card class="mt-4">
-		<img src="https://picsum.photos/436/254"/>
+		<img [src]="loginCardImages[0].imageUrl" width="436" height="224"/>
 		<ion-card-content>
 			<ion-card-title>
-				Work with the Best in the Industry
+				{{loginCardImages[0].title}}
 			</ion-card-title>
 			<p>
-				Accelerate your career with B2B Marketting Leaders.
+				{{loginCardImages[0].desc}}
 			</p>
 		</ion-card-content>
 	</ion-card>
-	<div style="display:flex; justify-content:center;align-items:center">
+	<div class="mt-4" style="display:flex; justify-content:center;align-items:center">
 		<button ion-button big class="h2 font-weight-light bg-success text-white">{{screenConst.socialLoginGoogle}} >></button>
 	</div>
 </ion-content>

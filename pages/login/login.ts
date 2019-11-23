@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import  {ScreenConstants} from '../../common/constants';
+import  {ScreenConstants, loginCardImages} from '../../common/constants';
 
 
 @Component({
@@ -9,6 +9,7 @@ import  {ScreenConstants} from '../../common/constants';
 })
 export class LoginPage implements OnInit {
   screenConst = ScreenConstants;
+  loginCardImages = loginCardImages;
   constructor() {
     
    }
