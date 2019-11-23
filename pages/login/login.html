@@ -1,7 +1,30 @@
-<ion-content fullscreen style="background-color:lightgreen">
-<div style="position:fixed; background-color:black; height:50px; width:100%;text-align:center; line-height:50px; letter-spacing:3px;color:white;">Welcome</div>
-<div style="height:100%; display:flex; justify-content:center;align-items:center">
-  <button ion-button small color="primary">Start Using Google</button>
-</div>
-	
+<ion-content fullscreen
+	style="background-image:url('https://cdn.jsdelivr.net/gh/ashish051321/sample21@master/grey_pattern.png'); height:100vh;"
+	class="d-flex justify-content-center align-items-end">
+	<!-- <div style="position:fixed; background-color:rgba(0,0,0,0.6); width:100%;text-align:center;  letter-spacing:3px;color:white; z-index:999"
+		class="h2 p-3">{{screenConst.loginWelcomeTitle}} </div> -->
+
+<ion-card class="w-100 m-0 p-0 text-white" style="background-color:rgba(0,0,0,0.6)">
+  <ion-card-header class="h2 text-white text-center">
+    {{screenConst.loginWelcomeTitle}}
+  </ion-card-header>
+  <ion-card-content class="text-center">
+    {{screenConst.loginWelcomeDescription}}
+  </ion-card-content>
+</ion-card>
+
+	<ion-card class="mt-4">
+		<img src="https://picsum.photos/436/254"/>
+		<ion-card-content>
+			<ion-card-title>
+				Work with the Best in the Industry
+			</ion-card-title>
+			<p>
+				Accelerate your career with B2B Marketting Leaders.
+			</p>
+		</ion-card-content>
+	</ion-card>
+	<div style="display:flex; justify-content:center;align-items:center">
+		<button ion-button big class="h2 font-weight-light bg-success text-white">{{screenConst.socialLoginGoogle}} >></button>
+	</div>
 </ion-content>

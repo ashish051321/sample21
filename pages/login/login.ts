@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import  {ScreenConstants} from '../../common/constants';
+
 
 @Component({
   selector: 'app-login',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.css']
 })
 export class LoginPage implements OnInit {
-
-  constructor() { }
+  screenConst = ScreenConstants;
+  constructor() {
+    
+   }
 
   ngOnInit() {
   }
