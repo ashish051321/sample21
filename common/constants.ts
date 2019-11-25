@@ -3,7 +3,8 @@ export enum ScreenConstants{
   loginWelcomeTitle= 'Welcome to Opportunities Platform',
   loginWelcomeDescription='Your Gateway to the ocean of opportunities at XDBS!!',
   splashStartCTA = 'Lets Start >>',
-  socialLoginGoogle = 'Start with Google Login'
+  socialLoginGoogle = 'Start with Google Login',
+  quoteofTheDay = 'Put a dent in the Universe !'
 }
 export const loginCardImages = [
   {

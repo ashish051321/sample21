@@ -12,7 +12,7 @@
     style="background-color:lightgreen;padding:5px;" *ngIf="splashIndex == 5"/>
 		<img src="https://cdn.jsdelivr.net/gh/ashish051321/sample21@master/assets/splashPics/6.png" alt="" width="100px" height="100px"
     style="background-color:lightgreen;padding:5px;" *ngIf="splashIndex == 6"/>
-		<p class="text-white font-weight-light small splashText mb-4">Put a dent in the Universe !</p>
+		<p class="text-white font-weight-light h4 splashText mb-4">{{screenConst.quoteofTheDay}}</p>
 		<button ion-button big class="h2 font-weight-light bg-success text-white" (click)="startApp()">{{screenConst.splashStartCTA}}</button>
 	</div>
 </ion-content>
@@ -34,8 +34,8 @@
 		functions of this platform.
 	</div>
 
-	<ion-card class="mt-4">
-		<img [src]="loginCardImages[0].imageUrl" width="100%" height="auto"/>
+	<ion-card class="mt-4 changingBanner">
+		<img [src]="loginCardImages[0].imageUrl" width="100%" height="200px"/>
 		<ion-card-content>
 			<ion-card-title>
 				{{loginCardImages[0].title}}
@@ -46,6 +46,6 @@
 		</ion-card-content>
 	</ion-card>
 	<div class="mt-4" style="display:flex; justify-content:center;align-items:center">
-		<button ion-button big class="h2 font-weight-light bg-success text-white">{{screenConst.socialLoginGoogle}} >></button>
+		<button ion-button big class="h2 font-weight-light bg-success text-white" (click)="login()">{{screenConst.socialLoginGoogle}} >></button>
 	</div>
 </ion-content>

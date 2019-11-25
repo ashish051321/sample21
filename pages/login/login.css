@@ -11,3 +11,8 @@
     /* font-family: 'Kaushan Script', cursive; */
     letter-spacing:3px;
   }
+
+:host ion-card.changingBanner{
+  height: 300px;
+  /* width:75%; */
+}
