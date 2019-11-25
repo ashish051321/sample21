@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ScreenConstants, loginCardImages } from "../../common/constants";
 import { interval } from "rxjs";
-import { delay, first, mapTo } from "rxjs/operators";
+import { delay, first, mapTo, take, throttleTime } from "rxjs/operators";
 
 @Component({
   selector: "app-login",
@@ -10,19 +10,30 @@ import { delay, first, mapTo } from "rxjs/operators";
 })
 export class LoginPage implements OnInit {
   showSplash = true;
+  splashIndex = 1;
   screenConst = ScreenConstants;
   loginCardImages = loginCardImages;
   constructor() {}
 
+  startApp() {
+    this.showSplash = false;
+  }
+
   ngOnInit() {
-    interval(1000)
+    interval(600)
       .pipe(
-        delay(5000),
-        first(),
-        mapTo(false)
+        // delay(1000)
       )
-      .subscribe(data => {
-        this.showSplash = data; 
-      });
+      .subscribe(
+        data => {
+          this.splashIndex = (data % 6) + 1;
+        },
+        err => {
+          console.log("somethign went wrong while loading the app !");
+        },
+        () => {
+          this.showSplash = false;
+        }
+      );
   }
 }

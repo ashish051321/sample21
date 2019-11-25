@@ -1,6 +1,8 @@
 export enum ScreenConstants{
+  appName = 'Jiffy Hire',
   loginWelcomeTitle= 'Welcome to Opportunities Platform',
   loginWelcomeDescription='Your Gateway to the ocean of opportunities at XDBS!!',
+  splashStartCTA = 'Lets Start >>',
   socialLoginGoogle = 'Start with Google Login'
 }
 export const loginCardImages = [

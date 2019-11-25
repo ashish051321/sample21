@@ -1,8 +1,20 @@
 <ion-content fullscreen *ngIf="showSplash" style="; height:100vh; width:100%;">
 	<div
-		style="width:100%; height:100vh; background-image:url('https://cdn.jsdelivr.net/gh/ashish051321/sample21@master/grey_pattern.png'); display:flex; justify-content:center; align-items:center;">
-		<img src="https://cdn.jsdelivr.net/gh/ashish051321/sample21@master/assets/splashPics/team_work_2.png" alt="" width="100px" height="100px"/>
-    </div>
+		style="width:100%; height:100vh; background-image:url('https://cdn.jsdelivr.net/gh/ashish051321/sample21@master/grey_pattern.png'); display:flex; flex-direction:column; justify-content:space-around; align-items:center;">
+		<p class="text-white font-weight-lighter h1 splashText mb-4"> {{screenConst.appName}}</p>
+		<img src="https://cdn.jsdelivr.net/gh/ashish051321/sample21@master/assets/splashPics/2.png" alt="" width="100px" height="100px"
+    style="background-color:lightgreen;padding:5px;" *ngIf="splashIndex == 1 || splashIndex == 2"/>
+		<img src="https://cdn.jsdelivr.net/gh/ashish051321/sample21@master/assets/splashPics/3.png" alt="" width="100px" height="100px"
+    style="background-color:lightgreen;padding:5px;" *ngIf="splashIndex == 3"/>
+		<img src="https://cdn.jsdelivr.net/gh/ashish051321/sample21@master/assets/splashPics/4.png" alt="" width="100px" height="100px"
+    style="background-color:lightgreen;padding:5px;" *ngIf="splashIndex == 4"/>
+		<img src="https://cdn.jsdelivr.net/gh/ashish051321/sample21@master/assets/splashPics/5.png" alt="" width="100px" height="100px"
+    style="background-color:lightgreen;padding:5px;" *ngIf="splashIndex == 5"/>
+		<img src="https://cdn.jsdelivr.net/gh/ashish051321/sample21@master/assets/splashPics/6.png" alt="" width="100px" height="100px"
+    style="background-color:lightgreen;padding:5px;" *ngIf="splashIndex == 6"/>
+		<p class="text-white font-weight-light small splashText mb-4">Put a dent in the Universe !</p>
+		<button ion-button big class="h2 font-weight-light bg-success text-white" (click)="startApp()">{{screenConst.splashStartCTA}}</button>
+	</div>
 </ion-content>
 
 

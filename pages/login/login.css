@@ -1,7 +1,13 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
 
 :host{
   font-family: 'Lato', sans-serif;
-  
 }
+
+:host .splashText , button{
+    /* font-family: 'Kaushan Script', cursive; */
+    letter-spacing:3px;
+  }
